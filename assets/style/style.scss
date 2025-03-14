@@ -1,0 +1,16 @@
+@import "../scss/functions";
+@import "../scss/variables";
+
+$h7-font-size: $font-size-base * 3;
+$h8-font-size: $font-size-base * 3.5;
+$h9-font-size: $font-size-base * 4;
+
+$font-sizes-new: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+);
+$font-sizes: map-merge($font-sizes, $font-sizes-new);
+
+@import "../scss/bootstrap.scss";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
